@@ -14,7 +14,7 @@ public class CodeExamples {
             new Carros("Modelo A", 2014, "DEF456"),
             new Carros("Modelo B", 2017, "DEF789"));
   }
-//
+
   public static void main(String[] args) {
     Collection<Carros> carros = obterCarros();
     List<String> paraRecall = carros.stream()
