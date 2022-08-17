@@ -15,13 +15,13 @@ public class CodeExamples {
             new Carros("Modelo B", 2017, "DEF789"));
   }
 //
-//  public static void main(String[] args) {
-//    Collection<Carros> carros = obterCarros();
-//    List<String> paraRecall = carros.stream()
-//            .filter(c -> "Modelo A".equals(c.getModelo()))
-//            .filter(c -> c.getAno() >= 2015 && c.getAno() <= 2017)
-//            .map(auto -> auto.getChassi())
-//            .collect(Collectors.toList());
-//    System.out.println(paraRecall);
-//  }
-//}
+  public static void main(String[] args) {
+    Collection<Carros> carros = obterCarros();
+    List<String> paraRecall = carros.stream()
+            .filter(c -> "Modelo A".equals(c.getModelo()))
+            .filter(c -> c.getAno() >= 2015 && c.getAno() <= 2017)
+            .map(auto -> auto.getChassi())
+            .collect(Collectors.toList());
+    System.out.println(paraRecall);
+  }
+}
